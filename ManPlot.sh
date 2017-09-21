@@ -8,9 +8,7 @@
 
 module load R/3.3.2
 module load gcc
-Rscript ${PBS_O_WORKDIR}/ManPlotCX1.R /groupvol/med-bio/epiUKB//UKB_assoc_500k/results/CardiacGWAS/output/noMI/BOLT_output.csv noMI 5e-7
+Rscript ${PBS_O_WORKDIR}/ManPlotCX1.R <file>.csv noMI 5e-7
 
-Rscript ${PBS_O_WORKDIR}/ManPlotCX1.R /groupvol/med-bio/epiUKB//UKB_assoc_500k/results/CardiacGWAS/output/noMI_hBP/BOLT_output.csv noMI_hBP 5e-7
-
-Rscript ${PBS_O_WORKDIR}/ManPlotCX1.R /groupvol/med-bio/epiUKB//UKB_assoc_500k/results/CardiacGWAS/output/noMI_hBP_diab_RA/BOLT_output.csv noMI_hBP_diab_RA 5e-7
+cp *.png ${PBS_O_WORKDIR}
 
